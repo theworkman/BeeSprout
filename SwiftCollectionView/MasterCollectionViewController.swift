@@ -17,6 +17,9 @@ class MasterCollectionViewController: UICollectionViewController {
     var icon: PhotoCell!
     var imageFileNames = [String]()
     
+   // var editModeEnabled = false
+
+    
     var selectedPhotoName = String() // to pass to DetailViewController
 
 

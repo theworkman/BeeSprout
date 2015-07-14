@@ -11,7 +11,6 @@
 		15D1F93A1B545FFA0016F484 /* IMFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D1F9361B545FFA0016F484 /* IMFCore.framework */; };
 		15D1F93B1B545FFA0016F484 /* IMFData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D1F9371B545FFA0016F484 /* IMFData.framework */; };
 		15D1F93C1B545FFA0016F484 /* IMFPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D1F9381B545FFA0016F484 /* IMFPush.framework */; };
-		15D1F93E1B546CE10016F484 /* IMFLoggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D1F93D1B546CE10016F484 /* IMFLoggerExtension.swift */; };
 		15D2D7DC1B53A858006F9860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D2D7DB1B53A858006F9860 /* AppDelegate.swift */; };
 		15D2D7E11B53A858006F9860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D7DF1B53A858006F9860 /* Main.storyboard */; };
 		15D2D7E31B53A858006F9860 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D7E21B53A858006F9860 /* Images.xcassets */; };
@@ -83,7 +82,6 @@
 		15D1F9361B545FFA0016F484 /* IMFCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMFCore.framework; sourceTree = "<group>"; };
 		15D1F9371B545FFA0016F484 /* IMFData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMFData.framework; sourceTree = "<group>"; };
 		15D1F9381B545FFA0016F484 /* IMFPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMFPush.framework; sourceTree = "<group>"; };
-		15D1F93D1B546CE10016F484 /* IMFLoggerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMFLoggerExtension.swift; sourceTree = "<group>"; };
 		15D2D7D61B53A858006F9860 /* BeeSprout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeSprout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D2D7DA1B53A858006F9860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15D2D7DB1B53A858006F9860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -203,7 +201,6 @@
 				15D2D7FD1B53AA14006F9860 /* MasterCollectionViewController.swift */,
 				15D2D85E1B53D519006F9860 /* DetailViewController.swift */,
 				15D2D7FF1B53CCE1006F9860 /* PhotoCell.swift */,
-				15D1F93D1B546CE10016F484 /* IMFLoggerExtension.swift */,
 				15D2D8011B53CEB7006F9860 /* flowers */,
 				15D2D7DF1B53A858006F9860 /* Main.storyboard */,
 				15D2D7E21B53A858006F9860 /* Images.xcassets */,
@@ -442,7 +439,6 @@
 				15D2D7FE1B53AA14006F9860 /* MasterCollectionViewController.swift in Sources */,
 				15D2D8001B53CCE1006F9860 /* PhotoCell.swift in Sources */,
 				15D2D7DC1B53A858006F9860 /* AppDelegate.swift in Sources */,
-				15D1F93E1B546CE10016F484 /* IMFLoggerExtension.swift in Sources */,
 				15D2D85F1B53D519006F9860 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
