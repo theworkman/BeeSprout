@@ -14,9 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+    func application(application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+            // initialize SDK with IBM Bluemix application ID and route
+            IMFClient.sharedInstance().initializeWithBackendRoute("https://beesproutios.mybluemix.net", backendGUID: "5a584ecb-6708-4afb-a82f-218d33a8cb2d")
+            return true
     }
 
     func applicationWillResignActive(application: UIApplication) {

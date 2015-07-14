@@ -10,11 +10,14 @@ import UIKit
 
 let reuseIdentifier = "Cell"
 
+
 class MasterCollectionViewController: UICollectionViewController {
     
     // Collection view dataSource objects
     var icon: PhotoCell!
     var imageFileNames = [String]()
+    
+    var selectedPhotoName = String() // to pass to DetailViewController
 
 
     override func viewDidLoad() {
@@ -53,27 +56,52 @@ class MasterCollectionViewController: UICollectionViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "photoDetail" {
+            // Put the destination view controller in a variable
+            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
+            
+            // Pass the selectedPhoto to the destination view controller
+            controller.selectedPhotoName = selectedPhotoName
+        }
+    }
+
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+        if segue.identifier == "showPhotos" {
+        }
+    }
+
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        // Put the selected collection view cell's photo file name in a variable
+        selectedPhotoName = imageFileNames[indexPath.row] as String
+        
+        // Pass control to the PhotoViewController
+        self.performSegueWithIdentifier("photoDetail", sender:self)
+    }
+
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        //#warning Incomplete method implementation -- Return the number of sections
-        return 0
-    }
+//    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+//        //#warning Incomplete method implementation -- Return the number of sections
+//        return 0
+//    }
 
 
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //#warning Incomplete method implementation -- Return the number of items in the section
-        return 0
-    }
+//    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        //#warning Incomplete method implementation -- Return the number of items in the section
+//        return 0
+//    }
 
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
-    
-        // Configure the cell
-    
-        return cell
-    }
+//    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+//        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
+//    
+//        // Configure the cell
+//    
+//        return cell
+//    }
 
     // MARK: UICollectionViewDelegate
 
@@ -116,7 +144,7 @@ class MasterCollectionViewController: UICollectionViewController {
         var results:NSArray = mainBundle.pathsForResourcesOfType("jpg",inDirectory:nil)
         
         // Convert NSArray to Swift Array
-        var dirPaths: Array = results as AnyObject as [String]
+        var dirPaths: Array = results as AnyObject as! [String]
         
         for path in dirPaths {
             // Convert the String values stored in path to an array
@@ -131,6 +159,31 @@ class MasterCollectionViewController: UICollectionViewController {
         /****************************************/
     }
 
+    // MARK: UICollectionViewDataSource
     
+    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        // Return the number of sections
+        return 1
+    }
+    
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        // Return the number of items in the section
+        return imageFileNames.count
+    }
+    
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        // Initialize the reusable Collection View Cell with our custom class
+        icon = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! PhotoCell
+        
+        //Configure the collection view cell
+        var imageFile = imageFileNames[indexPath.row]
+        icon.imageView.image = UIImage(named: imageFile)
+        var stringArray: Array = imageFile.componentsSeparatedByString(".")
+        icon.caption.text = stringArray[0]
+        
+        // Return the cell
+        return icon
+    }
+
     
 }

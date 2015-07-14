@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15D1F9391B545FFA0016F484 /* CloudantToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D1F9351B545FFA0016F484 /* CloudantToolkit.framework */; };
+		15D1F93A1B545FFA0016F484 /* IMFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D1F9361B545FFA0016F484 /* IMFCore.framework */; };
+		15D1F93B1B545FFA0016F484 /* IMFData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D1F9371B545FFA0016F484 /* IMFData.framework */; };
+		15D1F93C1B545FFA0016F484 /* IMFPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D1F9381B545FFA0016F484 /* IMFPush.framework */; };
+		15D1F93E1B546CE10016F484 /* IMFLoggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D1F93D1B546CE10016F484 /* IMFLoggerExtension.swift */; };
+		15D2D7DC1B53A858006F9860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D2D7DB1B53A858006F9860 /* AppDelegate.swift */; };
+		15D2D7E11B53A858006F9860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D7DF1B53A858006F9860 /* Main.storyboard */; };
+		15D2D7E31B53A858006F9860 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D7E21B53A858006F9860 /* Images.xcassets */; };
+		15D2D7E61B53A858006F9860 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D7E41B53A858006F9860 /* LaunchScreen.xib */; };
+		15D2D7F21B53A858006F9860 /* SwiftCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D2D7F11B53A858006F9860 /* SwiftCollectionViewTests.swift */; };
+		15D2D7FE1B53AA14006F9860 /* MasterCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D2D7FD1B53AA14006F9860 /* MasterCollectionViewController.swift */; };
+		15D2D8001B53CCE1006F9860 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D2D7FF1B53CCE1006F9860 /* PhotoCell.swift */; };
+		15D2D8301B53CF3F006F9860 /* aster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8021B53CF3F006F9860 /* aster.jpg */; };
+		15D2D8311B53CF3F006F9860 /* azalea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8031B53CF3F006F9860 /* azalea.jpg */; };
+		15D2D8321B53CF3F006F9860 /* buttercup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8041B53CF3F006F9860 /* buttercup.jpg */; };
+		15D2D8331B53CF3F006F9860 /* camellia pink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8051B53CF3F006F9860 /* camellia pink.jpg */; };
+		15D2D8341B53CF3F006F9860 /* camellia white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8061B53CF3F006F9860 /* camellia white.jpg */; };
+		15D2D8351B53CF3F006F9860 /* carnation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8071B53CF3F006F9860 /* carnation.jpg */; };
+		15D2D8361B53CF3F006F9860 /* daffodil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8081B53CF3F006F9860 /* daffodil.jpg */; };
+		15D2D8371B53CF3F006F9860 /* dahlia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8091B53CF3F006F9860 /* dahlia.jpg */; };
+		15D2D8381B53CF3F006F9860 /* daisy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D80A1B53CF3F006F9860 /* daisy.jpg */; };
+		15D2D8391B53CF3F006F9860 /* delphinium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D80B1B53CF3F006F9860 /* delphinium.jpg */; };
+		15D2D83A1B53CF3F006F9860 /* flowers of the holy basil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D80C1B53CF3F006F9860 /* flowers of the holy basil.jpg */; };
+		15D2D83B1B53CF3F006F9860 /* forget me not.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D80D1B53CF3F006F9860 /* forget me not.jpg */; };
+		15D2D83C1B53CF3F006F9860 /* foxglove.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D80E1B53CF3F006F9860 /* foxglove.jpg */; };
+		15D2D83D1B53CF3F006F9860 /* gerbera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D80F1B53CF3F006F9860 /* gerbera.jpg */; };
+		15D2D83E1B53CF3F006F9860 /* hibiscus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8101B53CF3F006F9860 /* hibiscus.jpg */; };
+		15D2D83F1B53CF3F006F9860 /* jasmine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8111B53CF3F006F9860 /* jasmine.jpg */; };
+		15D2D8401B53CF3F006F9860 /* lavender.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8121B53CF3F006F9860 /* lavender.jpg */; };
+		15D2D8411B53CF3F006F9860 /* lilac.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8131B53CF3F006F9860 /* lilac.jpg */; };
+		15D2D8421B53CF3F006F9860 /* lily.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8141B53CF3F006F9860 /* lily.jpg */; };
+		15D2D8431B53CF3F006F9860 /* marvel of peru four-oclock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8151B53CF3F006F9860 /* marvel of peru four-oclock.jpg */; };
+		15D2D8441B53CF3F006F9860 /* narcissus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8161B53CF3F006F9860 /* narcissus.jpg */; };
+		15D2D8451B53CF3F006F9860 /* orange blossom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8171B53CF3F006F9860 /* orange blossom.jpg */; };
+		15D2D8461B53CF3F006F9860 /* orange-rose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8181B53CF3F006F9860 /* orange-rose.jpg */; };
+		15D2D8471B53CF3F006F9860 /* peach blossom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8191B53CF3F006F9860 /* peach blossom.jpg */; };
+		15D2D8481B53CF3F006F9860 /* petunia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D81A1B53CF3F006F9860 /* petunia.jpg */; };
+		15D2D8491B53CF3F006F9860 /* pink daffodil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D81B1B53CF3F006F9860 /* pink daffodil.jpg */; };
+		15D2D84A1B53CF3F006F9860 /* pink rose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D81C1B53CF3F006F9860 /* pink rose.jpg */; };
+		15D2D84B1B53CF3F006F9860 /* pink-orchids.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D81D1B53CF3F006F9860 /* pink-orchids.jpg */; };
+		15D2D84C1B53CF3F006F9860 /* purple-clematis-hybrid-flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D81E1B53CF3F006F9860 /* purple-clematis-hybrid-flower.jpg */; };
+		15D2D84D1B53CF3F006F9860 /* purple-daisies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D81F1B53CF3F006F9860 /* purple-daisies.jpg */; };
+		15D2D84E1B53CF3F006F9860 /* purple-flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8201B53CF3F006F9860 /* purple-flower.jpg */; };
+		15D2D84F1B53CF3F006F9860 /* red rose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8211B53CF3F006F9860 /* red rose.jpg */; };
+		15D2D8501B53CF3F006F9860 /* soft rose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8221B53CF3F006F9860 /* soft rose.jpg */; };
+		15D2D8511B53CF3F006F9860 /* sunflower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8231B53CF3F006F9860 /* sunflower.jpg */; };
+		15D2D8521B53CF3F006F9860 /* tansy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8241B53CF3F006F9860 /* tansy.jpg */; };
+		15D2D8531B53CF3F006F9860 /* thistle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8251B53CF3F006F9860 /* thistle.jpg */; };
+		15D2D8541B53CF3F006F9860 /* thyme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8261B53CF3F006F9860 /* thyme.jpg */; };
+		15D2D8551B53CF3F006F9860 /* tulip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8271B53CF3F006F9860 /* tulip.jpg */; };
+		15D2D8561B53CF3F006F9860 /* violets.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8281B53CF3F006F9860 /* violets.jpg */; };
+		15D2D8571B53CF3F006F9860 /* water lily.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D8291B53CF3F006F9860 /* water lily.jpg */; };
+		15D2D8581B53CF3F006F9860 /* white-daisies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D82A1B53CF3F006F9860 /* white-daisies.jpg */; };
+		15D2D8591B53CF3F006F9860 /* white-rose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D82B1B53CF3F006F9860 /* white-rose.jpg */; };
+		15D2D85A1B53CF3F006F9860 /* yellow-dandelion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D82C1B53CF3F006F9860 /* yellow-dandelion.jpg */; };
+		15D2D85B1B53CF3F006F9860 /* yellow-flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D82D1B53CF3F006F9860 /* yellow-flower.jpg */; };
+		15D2D85C1B53CF3F006F9860 /* yellow-rose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D82E1B53CF3F006F9860 /* yellow-rose.jpg */; };
+		15D2D85D1B53CF3F006F9860 /* zinnia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15D2D82F1B53CF3F006F9860 /* zinnia.jpg */; };
+		15D2D85F1B53D519006F9860 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D2D85E1B53D519006F9860 /* DetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15D2D7EC1B53A858006F9860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15D2D7CE1B53A858006F9860 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15D2D7D51B53A858006F9860;
+			remoteInfo = SwiftCollectionView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15D1F9351B545FFA0016F484 /* CloudantToolkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudantToolkit.framework; sourceTree = "<group>"; };
+		15D1F9361B545FFA0016F484 /* IMFCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMFCore.framework; sourceTree = "<group>"; };
+		15D1F9371B545FFA0016F484 /* IMFData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMFData.framework; sourceTree = "<group>"; };
+		15D1F9381B545FFA0016F484 /* IMFPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMFPush.framework; sourceTree = "<group>"; };
+		15D1F93D1B546CE10016F484 /* IMFLoggerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMFLoggerExtension.swift; sourceTree = "<group>"; };
+		15D2D7D61B53A858006F9860 /* BeeSprout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeSprout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15D2D7DA1B53A858006F9860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15D2D7DB1B53A858006F9860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15D2D7E01B53A858006F9860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15D2D7E21B53A858006F9860 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		15D2D7E51B53A858006F9860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		15D2D7EB1B53A858006F9860 /* BeeSproutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeSproutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15D2D7F01B53A858006F9860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15D2D7F11B53A858006F9860 /* SwiftCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCollectionViewTests.swift; sourceTree = "<group>"; };
+		15D2D7FD1B53AA14006F9860 /* MasterCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterCollectionViewController.swift; sourceTree = "<group>"; };
+		15D2D7FF1B53CCE1006F9860 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		15D2D8021B53CF3F006F9860 /* aster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aster.jpg; sourceTree = "<group>"; };
+		15D2D8031B53CF3F006F9860 /* azalea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = azalea.jpg; sourceTree = "<group>"; };
+		15D2D8041B53CF3F006F9860 /* buttercup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buttercup.jpg; sourceTree = "<group>"; };
+		15D2D8051B53CF3F006F9860 /* camellia pink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "camellia pink.jpg"; sourceTree = "<group>"; };
+		15D2D8061B53CF3F006F9860 /* camellia white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "camellia white.jpg"; sourceTree = "<group>"; };
+		15D2D8071B53CF3F006F9860 /* carnation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carnation.jpg; sourceTree = "<group>"; };
+		15D2D8081B53CF3F006F9860 /* daffodil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daffodil.jpg; sourceTree = "<group>"; };
+		15D2D8091B53CF3F006F9860 /* dahlia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dahlia.jpg; sourceTree = "<group>"; };
+		15D2D80A1B53CF3F006F9860 /* daisy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daisy.jpg; sourceTree = "<group>"; };
+		15D2D80B1B53CF3F006F9860 /* delphinium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = delphinium.jpg; sourceTree = "<group>"; };
+		15D2D80C1B53CF3F006F9860 /* flowers of the holy basil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "flowers of the holy basil.jpg"; sourceTree = "<group>"; };
+		15D2D80D1B53CF3F006F9860 /* forget me not.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "forget me not.jpg"; sourceTree = "<group>"; };
+		15D2D80E1B53CF3F006F9860 /* foxglove.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foxglove.jpg; sourceTree = "<group>"; };
+		15D2D80F1B53CF3F006F9860 /* gerbera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gerbera.jpg; sourceTree = "<group>"; };
+		15D2D8101B53CF3F006F9860 /* hibiscus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hibiscus.jpg; sourceTree = "<group>"; };
+		15D2D8111B53CF3F006F9860 /* jasmine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jasmine.jpg; sourceTree = "<group>"; };
+		15D2D8121B53CF3F006F9860 /* lavender.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lavender.jpg; sourceTree = "<group>"; };
+		15D2D8131B53CF3F006F9860 /* lilac.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lilac.jpg; sourceTree = "<group>"; };
+		15D2D8141B53CF3F006F9860 /* lily.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lily.jpg; sourceTree = "<group>"; };
+		15D2D8151B53CF3F006F9860 /* marvel of peru four-oclock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "marvel of peru four-oclock.jpg"; sourceTree = "<group>"; };
+		15D2D8161B53CF3F006F9860 /* narcissus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = narcissus.jpg; sourceTree = "<group>"; };
+		15D2D8171B53CF3F006F9860 /* orange blossom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "orange blossom.jpg"; sourceTree = "<group>"; };
+		15D2D8181B53CF3F006F9860 /* orange-rose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "orange-rose.jpg"; sourceTree = "<group>"; };
+		15D2D8191B53CF3F006F9860 /* peach blossom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "peach blossom.jpg"; sourceTree = "<group>"; };
+		15D2D81A1B53CF3F006F9860 /* petunia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = petunia.jpg; sourceTree = "<group>"; };
+		15D2D81B1B53CF3F006F9860 /* pink daffodil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pink daffodil.jpg"; sourceTree = "<group>"; };
+		15D2D81C1B53CF3F006F9860 /* pink rose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pink rose.jpg"; sourceTree = "<group>"; };
+		15D2D81D1B53CF3F006F9860 /* pink-orchids.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pink-orchids.jpg"; sourceTree = "<group>"; };
+		15D2D81E1B53CF3F006F9860 /* purple-clematis-hybrid-flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "purple-clematis-hybrid-flower.jpg"; sourceTree = "<group>"; };
+		15D2D81F1B53CF3F006F9860 /* purple-daisies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "purple-daisies.jpg"; sourceTree = "<group>"; };
+		15D2D8201B53CF3F006F9860 /* purple-flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "purple-flower.jpg"; sourceTree = "<group>"; };
+		15D2D8211B53CF3F006F9860 /* red rose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "red rose.jpg"; sourceTree = "<group>"; };
+		15D2D8221B53CF3F006F9860 /* soft rose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "soft rose.jpg"; sourceTree = "<group>"; };
+		15D2D8231B53CF3F006F9860 /* sunflower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sunflower.jpg; sourceTree = "<group>"; };
+		15D2D8241B53CF3F006F9860 /* tansy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tansy.jpg; sourceTree = "<group>"; };
+		15D2D8251B53CF3F006F9860 /* thistle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thistle.jpg; sourceTree = "<group>"; };
+		15D2D8261B53CF3F006F9860 /* thyme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thyme.jpg; sourceTree = "<group>"; };
+		15D2D8271B53CF3F006F9860 /* tulip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tulip.jpg; sourceTree = "<group>"; };
+		15D2D8281B53CF3F006F9860 /* violets.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = violets.jpg; sourceTree = "<group>"; };
+		15D2D8291B53CF3F006F9860 /* water lily.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "water lily.jpg"; sourceTree = "<group>"; };
+		15D2D82A1B53CF3F006F9860 /* white-daisies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "white-daisies.jpg"; sourceTree = "<group>"; };
+		15D2D82B1B53CF3F006F9860 /* white-rose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "white-rose.jpg"; sourceTree = "<group>"; };
+		15D2D82C1B53CF3F006F9860 /* yellow-dandelion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "yellow-dandelion.jpg"; sourceTree = "<group>"; };
+		15D2D82D1B53CF3F006F9860 /* yellow-flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "yellow-flower.jpg"; sourceTree = "<group>"; };
+		15D2D82E1B53CF3F006F9860 /* yellow-rose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "yellow-rose.jpg"; sourceTree = "<group>"; };
+		15D2D82F1B53CF3F006F9860 /* zinnia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zinnia.jpg; sourceTree = "<group>"; };
+		15D2D85E1B53D519006F9860 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15D2D7D31B53A858006F9860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15D1F9391B545FFA0016F484 /* CloudantToolkit.framework in Frameworks */,
+				15D1F93A1B545FFA0016F484 /* IMFCore.framework in Frameworks */,
+				15D1F93B1B545FFA0016F484 /* IMFData.framework in Frameworks */,
+				15D1F93C1B545FFA0016F484 /* IMFPush.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15D2D7E81B53A858006F9860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15D1F9341B545FCA0016F484 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15D1F9351B545FFA0016F484 /* CloudantToolkit.framework */,
+				15D1F9361B545FFA0016F484 /* IMFCore.framework */,
+				15D1F9371B545FFA0016F484 /* IMFData.framework */,
+				15D1F9381B545FFA0016F484 /* IMFPush.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15D2D7CD1B53A858006F9860 = {
+			isa = PBXGroup;
+			children = (
+				15D2D7D81B53A858006F9860 /* BeeSprout */,
+				15D2D7EE1B53A858006F9860 /* BeeSproutTests */,
+				15D1F9341B545FCA0016F484 /* Frameworks */,
+				15D2D7D71B53A858006F9860 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15D2D7D71B53A858006F9860 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15D2D7D61B53A858006F9860 /* BeeSprout.app */,
+				15D2D7EB1B53A858006F9860 /* BeeSproutTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15D2D7D81B53A858006F9860 /* BeeSprout */ = {
+			isa = PBXGroup;
+			children = (
+				15D2D7DB1B53A858006F9860 /* AppDelegate.swift */,
+				15D2D7FD1B53AA14006F9860 /* MasterCollectionViewController.swift */,
+				15D2D85E1B53D519006F9860 /* DetailViewController.swift */,
+				15D2D7FF1B53CCE1006F9860 /* PhotoCell.swift */,
+				15D1F93D1B546CE10016F484 /* IMFLoggerExtension.swift */,
+				15D2D8011B53CEB7006F9860 /* flowers */,
+				15D2D7DF1B53A858006F9860 /* Main.storyboard */,
+				15D2D7E21B53A858006F9860 /* Images.xcassets */,
+				15D2D7E41B53A858006F9860 /* LaunchScreen.xib */,
+				15D2D7D91B53A858006F9860 /* Supporting Files */,
+			);
+			name = BeeSprout;
+			path = SwiftCollectionView;
+			sourceTree = "<group>";
+		};
+		15D2D7D91B53A858006F9860 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15D2D7DA1B53A858006F9860 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15D2D7EE1B53A858006F9860 /* BeeSproutTests */ = {
+			isa = PBXGroup;
+			children = (
+				15D2D7F11B53A858006F9860 /* SwiftCollectionViewTests.swift */,
+				15D2D7EF1B53A858006F9860 /* Supporting Files */,
+			);
+			name = BeeSproutTests;
+			path = SwiftCollectionViewTests;
+			sourceTree = "<group>";
+		};
+		15D2D7EF1B53A858006F9860 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15D2D7F01B53A858006F9860 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15D2D8011B53CEB7006F9860 /* flowers */ = {
+			isa = PBXGroup;
+			children = (
+				15D2D8021B53CF3F006F9860 /* aster.jpg */,
+				15D2D8031B53CF3F006F9860 /* azalea.jpg */,
+				15D2D8041B53CF3F006F9860 /* buttercup.jpg */,
+				15D2D8051B53CF3F006F9860 /* camellia pink.jpg */,
+				15D2D8061B53CF3F006F9860 /* camellia white.jpg */,
+				15D2D8071B53CF3F006F9860 /* carnation.jpg */,
+				15D2D8081B53CF3F006F9860 /* daffodil.jpg */,
+				15D2D8091B53CF3F006F9860 /* dahlia.jpg */,
+				15D2D80A1B53CF3F006F9860 /* daisy.jpg */,
+				15D2D80B1B53CF3F006F9860 /* delphinium.jpg */,
+				15D2D80C1B53CF3F006F9860 /* flowers of the holy basil.jpg */,
+				15D2D80D1B53CF3F006F9860 /* forget me not.jpg */,
+				15D2D80E1B53CF3F006F9860 /* foxglove.jpg */,
+				15D2D80F1B53CF3F006F9860 /* gerbera.jpg */,
+				15D2D8101B53CF3F006F9860 /* hibiscus.jpg */,
+				15D2D8111B53CF3F006F9860 /* jasmine.jpg */,
+				15D2D8121B53CF3F006F9860 /* lavender.jpg */,
+				15D2D8131B53CF3F006F9860 /* lilac.jpg */,
+				15D2D8141B53CF3F006F9860 /* lily.jpg */,
+				15D2D8151B53CF3F006F9860 /* marvel of peru four-oclock.jpg */,
+				15D2D8161B53CF3F006F9860 /* narcissus.jpg */,
+				15D2D8171B53CF3F006F9860 /* orange blossom.jpg */,
+				15D2D8181B53CF3F006F9860 /* orange-rose.jpg */,
+				15D2D8191B53CF3F006F9860 /* peach blossom.jpg */,
+				15D2D81A1B53CF3F006F9860 /* petunia.jpg */,
+				15D2D81B1B53CF3F006F9860 /* pink daffodil.jpg */,
+				15D2D81C1B53CF3F006F9860 /* pink rose.jpg */,
+				15D2D81D1B53CF3F006F9860 /* pink-orchids.jpg */,
+				15D2D81E1B53CF3F006F9860 /* purple-clematis-hybrid-flower.jpg */,
+				15D2D81F1B53CF3F006F9860 /* purple-daisies.jpg */,
+				15D2D8201B53CF3F006F9860 /* purple-flower.jpg */,
+				15D2D8211B53CF3F006F9860 /* red rose.jpg */,
+				15D2D8221B53CF3F006F9860 /* soft rose.jpg */,
+				15D2D8231B53CF3F006F9860 /* sunflower.jpg */,
+				15D2D8241B53CF3F006F9860 /* tansy.jpg */,
+				15D2D8251B53CF3F006F9860 /* thistle.jpg */,
+				15D2D8261B53CF3F006F9860 /* thyme.jpg */,
+				15D2D8271B53CF3F006F9860 /* tulip.jpg */,
+				15D2D8281B53CF3F006F9860 /* violets.jpg */,
+				15D2D8291B53CF3F006F9860 /* water lily.jpg */,
+				15D2D82A1B53CF3F006F9860 /* white-daisies.jpg */,
+				15D2D82B1B53CF3F006F9860 /* white-rose.jpg */,
+				15D2D82C1B53CF3F006F9860 /* yellow-dandelion.jpg */,
+				15D2D82D1B53CF3F006F9860 /* yellow-flower.jpg */,
+				15D2D82E1B53CF3F006F9860 /* yellow-rose.jpg */,
+				15D2D82F1B53CF3F006F9860 /* zinnia.jpg */,
+			);
+			name = flowers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15D2D7D51B53A858006F9860 /* BeeSprout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15D2D7F51B53A858006F9860 /* Build configuration list for PBXNativeTarget "BeeSprout" */;
+			buildPhases = (
+				15D2D7D21B53A858006F9860 /* Sources */,
+				15D2D7D31B53A858006F9860 /* Frameworks */,
+				15D2D7D41B53A858006F9860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeeSprout;
+			productName = SwiftCollectionView;
+			productReference = 15D2D7D61B53A858006F9860 /* BeeSprout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15D2D7EA1B53A858006F9860 /* BeeSproutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15D2D7F81B53A858006F9860 /* Build configuration list for PBXNativeTarget "BeeSproutTests" */;
+			buildPhases = (
+				15D2D7E71B53A858006F9860 /* Sources */,
+				15D2D7E81B53A858006F9860 /* Frameworks */,
+				15D2D7E91B53A858006F9860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15D2D7ED1B53A858006F9860 /* PBXTargetDependency */,
+			);
+			name = BeeSproutTests;
+			productName = SwiftCollectionViewTests;
+			productReference = 15D2D7EB1B53A858006F9860 /* BeeSproutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15D2D7CE1B53A858006F9860 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = SeaZar;
+				TargetAttributes = {
+					15D2D7D51B53A858006F9860 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					15D2D7EA1B53A858006F9860 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 15D2D7D51B53A858006F9860;
+					};
+				};
+			};
+			buildConfigurationList = 15D2D7D11B53A858006F9860 /* Build configuration list for PBXProject "BeeSprout" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15D2D7CD1B53A858006F9860;
+			productRefGroup = 15D2D7D71B53A858006F9860 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15D2D7D51B53A858006F9860 /* BeeSprout */,
+				15D2D7EA1B53A858006F9860 /* BeeSproutTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15D2D7D41B53A858006F9860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15D2D85C1B53CF3F006F9860 /* yellow-rose.jpg in Resources */,
+				15D2D8431B53CF3F006F9860 /* marvel of peru four-oclock.jpg in Resources */,
+				15D2D8501B53CF3F006F9860 /* soft rose.jpg in Resources */,
+				15D2D8361B53CF3F006F9860 /* daffodil.jpg in Resources */,
+				15D2D8521B53CF3F006F9860 /* tansy.jpg in Resources */,
+				15D2D8551B53CF3F006F9860 /* tulip.jpg in Resources */,
+				15D2D83A1B53CF3F006F9860 /* flowers of the holy basil.jpg in Resources */,
+				15D2D7E11B53A858006F9860 /* Main.storyboard in Resources */,
+				15D2D8311B53CF3F006F9860 /* azalea.jpg in Resources */,
+				15D2D8401B53CF3F006F9860 /* lavender.jpg in Resources */,
+				15D2D8471B53CF3F006F9860 /* peach blossom.jpg in Resources */,
+				15D2D84F1B53CF3F006F9860 /* red rose.jpg in Resources */,
+				15D2D8531B53CF3F006F9860 /* thistle.jpg in Resources */,
+				15D2D8391B53CF3F006F9860 /* delphinium.jpg in Resources */,
+				15D2D83C1B53CF3F006F9860 /* foxglove.jpg in Resources */,
+				15D2D83D1B53CF3F006F9860 /* gerbera.jpg in Resources */,
+				15D2D83E1B53CF3F006F9860 /* hibiscus.jpg in Resources */,
+				15D2D85D1B53CF3F006F9860 /* zinnia.jpg in Resources */,
+				15D2D8341B53CF3F006F9860 /* camellia white.jpg in Resources */,
+				15D2D8481B53CF3F006F9860 /* petunia.jpg in Resources */,
+				15D2D8321B53CF3F006F9860 /* buttercup.jpg in Resources */,
+				15D2D8511B53CF3F006F9860 /* sunflower.jpg in Resources */,
+				15D2D7E61B53A858006F9860 /* LaunchScreen.xib in Resources */,
+				15D2D7E31B53A858006F9860 /* Images.xcassets in Resources */,
+				15D2D8561B53CF3F006F9860 /* violets.jpg in Resources */,
+				15D2D84D1B53CF3F006F9860 /* purple-daisies.jpg in Resources */,
+				15D2D8421B53CF3F006F9860 /* lily.jpg in Resources */,
+				15D2D8441B53CF3F006F9860 /* narcissus.jpg in Resources */,
+				15D2D83F1B53CF3F006F9860 /* jasmine.jpg in Resources */,
+				15D2D85B1B53CF3F006F9860 /* yellow-flower.jpg in Resources */,
+				15D2D8371B53CF3F006F9860 /* dahlia.jpg in Resources */,
+				15D2D84B1B53CF3F006F9860 /* pink-orchids.jpg in Resources */,
+				15D2D8461B53CF3F006F9860 /* orange-rose.jpg in Resources */,
+				15D2D84C1B53CF3F006F9860 /* purple-clematis-hybrid-flower.jpg in Resources */,
+				15D2D83B1B53CF3F006F9860 /* forget me not.jpg in Resources */,
+				15D2D85A1B53CF3F006F9860 /* yellow-dandelion.jpg in Resources */,
+				15D2D8581B53CF3F006F9860 /* white-daisies.jpg in Resources */,
+				15D2D8451B53CF3F006F9860 /* orange blossom.jpg in Resources */,
+				15D2D8591B53CF3F006F9860 /* white-rose.jpg in Resources */,
+				15D2D8331B53CF3F006F9860 /* camellia pink.jpg in Resources */,
+				15D2D8351B53CF3F006F9860 /* carnation.jpg in Resources */,
+				15D2D84E1B53CF3F006F9860 /* purple-flower.jpg in Resources */,
+				15D2D8381B53CF3F006F9860 /* daisy.jpg in Resources */,
+				15D2D8301B53CF3F006F9860 /* aster.jpg in Resources */,
+				15D2D8571B53CF3F006F9860 /* water lily.jpg in Resources */,
+				15D2D8491B53CF3F006F9860 /* pink daffodil.jpg in Resources */,
+				15D2D8411B53CF3F006F9860 /* lilac.jpg in Resources */,
+				15D2D84A1B53CF3F006F9860 /* pink rose.jpg in Resources */,
+				15D2D8541B53CF3F006F9860 /* thyme.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15D2D7E91B53A858006F9860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15D2D7D21B53A858006F9860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15D2D7FE1B53AA14006F9860 /* MasterCollectionViewController.swift in Sources */,
+				15D2D8001B53CCE1006F9860 /* PhotoCell.swift in Sources */,
+				15D2D7DC1B53A858006F9860 /* AppDelegate.swift in Sources */,
+				15D1F93E1B546CE10016F484 /* IMFLoggerExtension.swift in Sources */,
+				15D2D85F1B53D519006F9860 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15D2D7E71B53A858006F9860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15D2D7F21B53A858006F9860 /* SwiftCollectionViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15D2D7ED1B53A858006F9860 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15D2D7D51B53A858006F9860 /* BeeSprout */;
+			targetProxy = 15D2D7EC1B53A858006F9860 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15D2D7DF1B53A858006F9860 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15D2D7E01B53A858006F9860 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15D2D7E41B53A858006F9860 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15D2D7E51B53A858006F9860 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15D2D7F31B53A858006F9860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15D2D7F41B53A858006F9860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15D2D7F61B53A858006F9860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/IMFCore/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SwiftCollectionView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = BeeSprout;
+			};
+			name = Debug;
+		};
+		15D2D7F71B53A858006F9860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/IMFCore/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SwiftCollectionView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = BeeSprout;
+			};
+			name = Release;
+		};
+		15D2D7F91B53A858006F9860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftCollectionViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = BeeSproutTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftCollectionView.app/SwiftCollectionView";
+			};
+			name = Debug;
+		};
+		15D2D7FA1B53A858006F9860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftCollectionViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = BeeSproutTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftCollectionView.app/SwiftCollectionView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15D2D7D11B53A858006F9860 /* Build configuration list for PBXProject "BeeSprout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15D2D7F31B53A858006F9860 /* Debug */,
+				15D2D7F41B53A858006F9860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15D2D7F51B53A858006F9860 /* Build configuration list for PBXNativeTarget "BeeSprout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15D2D7F61B53A858006F9860 /* Debug */,
+				15D2D7F71B53A858006F9860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15D2D7F81B53A858006F9860 /* Build configuration list for PBXNativeTarget "BeeSproutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15D2D7F91B53A858006F9860 /* Debug */,
+				15D2D7FA1B53A858006F9860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15D2D7CE1B53A858006F9860 /* Project object */;
+}

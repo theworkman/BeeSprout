@@ -27,6 +27,9 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" red="0.73022808566868691" green="0.48200724538555467" blue="0.24130310099169944" alpha="0.76000000000000001" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="iNU-ws-Nrh" kind="presentation" identifier="photoDetail" id="lBM-3G-Flb"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -38,7 +41,54 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agf-ce-nPg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="229" y="429"/>
+            <point key="canvasLocation" x="-400" y="469"/>
+        </scene>
+        <!--My Plant-->
+        <scene sceneID="DdA-qD-xGZ">
+            <objects>
+                <viewController id="hdw-7g-zRJ" customClass="DetailViewController" customModule="SwiftCollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1eS-Kk-8mi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ryt-Xr-Nhd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qNQ-Mq-gT4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d19-2l-vAR">
+                                <rect key="frame" x="75" y="72" width="450" height="301"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Caption" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Eo-yS-Dk1">
+                                <rect key="frame" x="270" y="391" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="1Eo-yS-Dk1" secondAttribute="centerX" constant="-0.5" id="Bag-Gb-Ja1"/>
+                            <constraint firstAttribute="centerX" secondItem="d19-2l-vAR" secondAttribute="centerX" id="aOD-Rg-J24"/>
+                            <constraint firstItem="1Eo-yS-Dk1" firstAttribute="top" secondItem="d19-2l-vAR" secondAttribute="bottom" constant="18" id="kap-tL-qJe"/>
+                            <constraint firstItem="d19-2l-vAR" firstAttribute="top" secondItem="1eS-Kk-8mi" secondAttribute="bottom" constant="8" id="lAh-ua-plT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Plant" id="3IA-U9-4ta">
+                        <barButtonItem key="leftBarButtonItem" title="Garden Bed" id="NVN-hA-zj7">
+                            <connections>
+                                <segue destination="KPD-SI-4Tp" kind="unwind" unwindAction="unwindSegue:" id="TrC-gu-5VU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="captionLabel" destination="1Eo-yS-Dk1" id="ryl-ng-ueU"/>
+                        <outlet property="imageView" destination="d19-2l-vAR" id="3vl-7V-sEB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IYs-Ii-77j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="KPD-SI-4Tp" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-400" y="1220"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="avE-kf-CFA">
@@ -56,7 +106,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAq-IM-vtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-583" y="429"/>
+            <point key="canvasLocation" x="-1212" y="469"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AwR-0b-1vc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iNU-ws-Nrh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SgQ-uB-FSd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hdw-7g-zRJ" kind="relationship" relationship="rootViewController" id="aQd-ve-s3p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTy-Pi-zaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1212" y="1220"/>
         </scene>
     </scenes>
 </document>
